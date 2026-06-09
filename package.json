@@ -7,10 +7,10 @@
   "homepage": "https://sterfive.com",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/sterfive/i3x2ua-node.git"
+    "url": "https://github.com/node-opcua/i3x2ua-node.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/sterfive/i3x2ua-node/-/issues",
+    "url": "https://github.com/node-opcua/i3x2ua-node/issues",
     "email": "contact@sterfive.com"
   },
   "funding": {
