@@ -7,7 +7,7 @@
   "homepage": "https://sterfive.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-opcua/i3x2ua-node.git",
+    "url": "git+https://github.com/node-opcua/i3x2ua-node.git",
     "directory": "packages/rest-server"
   },
   "bugs": {
