@@ -1,5 +1,6 @@
 {
   "name": "@node-i3x/demo-embedded",
+  "private": true,
   "version": "0.2.0",
   "license": "AGPL-3.0-or-later OR LicenseRef-Sterfive-Commercial",
   "author": "Sterfive SAS <contact@sterfive.com> (https://sterfive.com)",

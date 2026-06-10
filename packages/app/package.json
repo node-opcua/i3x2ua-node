@@ -1,5 +1,6 @@
 {
   "name": "@node-i3x/app",
+  "private": true,
   "version": "0.2.0",
   "description": "i3X CLI -- expose OPC UA servers as i3X REST APIs",
   "license": "AGPL-3.0-or-later OR LicenseRef-Sterfive-Commercial",

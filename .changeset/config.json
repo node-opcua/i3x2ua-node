@@ -7,14 +7,15 @@
       "@node-i3x/core",
       "@node-i3x/opcua-connector",
       "@node-i3x/pseudo-session-connector",
-      "@node-i3x/rest-server",
-      "@node-i3x/app",
-      "@node-i3x/demo-embedded"
+      "@node-i3x/rest-server"
     ]
   ],
   "linked": [],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": []
+  "ignore": [
+    "@node-i3x/app",
+    "@node-i3x/demo-embedded"
+  ]
 }
