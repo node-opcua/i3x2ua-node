@@ -7,7 +7,7 @@
 
 > OPC UA client adapter — implements `IDataSourcePort` using [node-opcua](https://github.com/node-opcua/node-opcua) for remote TCP/binary transport.
 
-This package is the **outbound adapter** in the [hexagonal architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)) of **i3x2ua-node**. It connects to any OPC UA server over `opc.tcp://`, browses the address space, and exposes it through the `IDataSourcePort` interface defined in `@node-i3x/core`.
+This package is the **outbound adapter** in the [hexagonal architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)) of **node-i3x**. It connects to any OPC UA server over `opc.tcp://`, browses the address space, and exposes it through the `IDataSourcePort` interface defined in `@node-i3x/core`.
 
 ---
 
@@ -46,7 +46,7 @@ await dataSource.connect();
 |---|---|---|---|
 | `endpointUrl` | `string` | *(required)* | OPC UA server endpoint (`opc.tcp://…`) |
 | `securityMode` | `'None' \| 'Sign' \| 'SignAndEncrypt'` | `'None'` | Message security mode |
-| `applicationName` | `string` | `'i3x2ua-node'` | Application name sent to the server |
+| `applicationName` | `string` | `'node-i3x'` | Application name sent to the server |
 | `optimizedClient` | `'auto' \| 'disabled'` | `'auto'` | Use `@sterfive/opcua-optimized-client` if installed |
 | `browseStrategy` | `'parallel' \| 'browseAll'` | `'parallel'` | BFS browse strategy (parallel is ~18× faster) |
 

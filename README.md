@@ -1,9 +1,9 @@
-# i3x2ua-node
+# node-i3x
 
 > TypeScript implementation of the i3X Beta specification — bridging OPC UA industrial automation to a modern REST API
 
 <!-- Badges -->
-[![CI](https://github.com/node-opcua/i3x2ua-node/actions/workflows/ci.yml/badge.svg)](https://github.com/node-opcua/i3x2ua-node/actions/workflows/ci.yml)
+[![CI](https://github.com/node-opcua/node-i3x/actions/workflows/ci.yml/badge.svg)](https://github.com/node-opcua/node-i3x/actions/workflows/ci.yml)
 [![License: AGPL-3.0 OR Commercial](https://img.shields.io/badge/license-AGPL--3.0%20%7C%20Commercial-blue)](LICENSE)
 [![Node.js >= 20](https://img.shields.io/badge/node-%3E%3D20-brightgreen?logo=node.js)](https://nodejs.org)
 [![TypeScript 5.7](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://typescriptlang.org)
@@ -14,7 +14,7 @@
 
 ## Overview
 
-**i3x2ua-node** converts OPC UA address spaces into [i3X](https://i3x.dev)-compliant REST/JSON endpoints. It exposes industrial automation data through a clean HTTP API with:
+**node-i3x** converts OPC UA address spaces into [i3X](https://i3x.dev)-compliant REST/JSON endpoints. It exposes industrial automation data through a clean HTTP API with:
 
 - **Stable element IDs** — deterministic, namespace-URI-based identifiers that survive server restarts
 - **Real-time subscriptions** — long-poll and Server-Sent Events (SSE) for live value updates
@@ -38,7 +38,7 @@ Built with [node-opcua](https://node-opcua.github.io/), [Fastify](https://fastif
 graph TB
     Client["HTTP Client"]
 
-    subgraph i3x2ua-node
+    subgraph node-i3x
         REST["@node-i3x/rest-server<br/>Fastify routes — i3X Beta API"]
         Core["@node-i3x/core<br/>Domain services · Models · Stable IDs"]
         OPC["@node-i3x/opcua-connector<br/>OPC UA client adapter (remote)"]
@@ -103,8 +103,8 @@ graph TB
 
 ```bash
 # Clone the repository
-git clone https://github.com/node-opcua/i3x2ua-node.git
-cd i3x2ua-node
+git clone https://github.com/node-opcua/node-i3x.git
+cd node-i3x
 
 # Install dependencies
 npm install
@@ -190,7 +190,7 @@ npm run build
 
 ### 🔑 Stable Element IDs
 
-OPC UA `NodeId` values are volatile — namespace indices can shuffle across server restarts. i3x2ua-node generates **stable, deterministic element IDs** by:
+OPC UA `NodeId` values are volatile — namespace indices can shuffle across server restarts. node-i3x generates **stable, deterministic element IDs** by:
 
 1. Computing the full **namespace-URI browse path** for each node (e.g., `nsu=http://example.org;s=Sensor1/Temperature`)
 2. Hashing the path with a deterministic hash function
@@ -276,10 +276,10 @@ The i3X Beta REST API surface:
 ## Docker
 
 ```bash
-docker build -t i3x2ua-node .
+docker build -t node-i3x .
 docker run -p 8000:8000 \
   -e I3X_OPCUA_ENDPOINT=opc.tcp://host.docker.internal:4840 \
-  i3x2ua-node
+  node-i3x
 ```
 
 ---

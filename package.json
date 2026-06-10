@@ -1,5 +1,5 @@
 {
-  "name": "i3x2ua-node",
+  "name": "node-i3x",
   "private": true,
   "packageManager": "npm@11.16.0",
   "description": "TypeScript implementation of the i3X Beta specification — bridging OPC UA industrial automation to a modern REST API",
@@ -8,10 +8,10 @@
   "homepage": "https://sterfive.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/node-opcua/i3x2ua-node.git"
+    "url": "git+https://github.com/node-opcua/node-i3x.git"
   },
   "bugs": {
-    "url": "https://github.com/node-opcua/i3x2ua-node/issues",
+    "url": "https://github.com/node-opcua/node-i3x/issues",
     "email": "contact@sterfive.com"
   },
   "funding": {
@@ -23,7 +23,6 @@
     "opc-ua",
     "opc ua",
     "i3x",
-    "i3x2ua",
     "industrial",
     "industry-4.0",
     "iiot",

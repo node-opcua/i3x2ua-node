@@ -1,4 +1,4 @@
-# Releasing i3x2ua-node
+# Releasing node-i3x
 
 This project uses [Changesets](https://github.com/changesets/changesets) for
 version management and automated npm publishing with
@@ -142,7 +142,7 @@ For each package (`@node-i3x/core`, `@node-i3x/opcua-connector`,
 3. Under **Trusted Publishers**, click **Add**:
    - **Provider**: GitHub Actions
    - **Repository owner**: `node-opcua`
-   - **Repository name**: `i3x2ua-node`
+   - **Repository name**: `node-i3x`
    - **Workflow filename**: `release.yml`
    - **Environment**: *(leave empty)*
 4. Save

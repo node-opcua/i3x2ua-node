@@ -1,6 +1,6 @@
-# Contributing to i3x2ua-node
+# Contributing to node-i3x
 
-Thank you for your interest in contributing to **i3x2ua-node**!
+Thank you for your interest in contributing to **node-i3x**!
 We welcome contributions from the community to help make this the
 best OPC UA → REST bridge for industrial automation.
 
@@ -57,7 +57,7 @@ We use **npm workspaces** for the monorepo.
 ```bash
 # Clone and install
 git clone <your-fork-url>
-cd i3x2ua-node
+cd node-i3x
 npm install
 
 # Run the full test suite (101 tests)
@@ -157,7 +157,7 @@ npm run test:watch
 
 ### Why a CLA?
 
-i3x2ua-node is **dual-licensed** under the
+node-i3x is **dual-licensed** under the
 [AGPL-3.0-or-later](LICENSE) and a
 [Sterfive Commercial License](LICENSING.md). This dual-licensing
 model is essential to the project's sustainability:
@@ -238,6 +238,6 @@ harassment-free experience for everyone.
 
 ---
 
-*Thank you for helping make i3x2ua-node better!*
+*Thank you for helping make node-i3x better!*
 
 *— The Sterfive team*

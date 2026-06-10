@@ -8,7 +8,7 @@
 
 > Fastify REST routes implementing the [i3X Beta API](https://i3x2ua.2cua.2cua.2c) specification.
 
-This package is the **inbound adapter** in the [hexagonal architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)) of **i3x2ua-node**. It exposes all domain services (`ModelService`, `ValueService`, `HistoryService`, `SubscriptionService`) as a standards-compliant REST API, including real-time Server-Sent Events (SSE) streaming.
+This package is the **inbound adapter** in the [hexagonal architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)) of **node-i3x**. It exposes all domain services (`ModelService`, `ValueService`, `HistoryService`, `SubscriptionService`) as a standards-compliant REST API, including real-time Server-Sent Events (SSE) streaming.
 
 ---
 

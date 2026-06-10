@@ -6,7 +6,7 @@ export default async function infoRoutes(app: FastifyInstance): Promise<void> {
     result: {
       specVersion: 'beta',
       serverVersion: '0.1.0',
-      serverName: 'i3x2ua-node',
+      serverName: 'node-i3x',
       vendor: {
         name: 'Sterfive SAS',
         url: 'https://sterfive.com',

@@ -53,7 +53,7 @@ export async function createApp(deps: RestServerDeps): Promise<FastifyInstance> 
 
   // Brand every response with X-Powered-By header
   app.addHook('onRequest', async (_req, reply) => {
-    reply.header('X-Powered-By', 'i3x2ua-node (Sterfive - https://sterfive.com)');
+    reply.header('X-Powered-By', 'node-i3x (Sterfive - https://sterfive.com)');
   });
 
   // Register routes

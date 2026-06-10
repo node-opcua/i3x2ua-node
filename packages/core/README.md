@@ -8,7 +8,7 @@
 
 > Domain core for the i3X specification — models, ports, and services with zero runtime dependencies.
 
-`@node-i3x/core` is the pure domain layer of the **i3x2ua-node** monorepo. It defines every domain model, service, and port interface required by the i3X Beta REST API — without importing a single runtime dependency. Adapters (OPC UA, MQTT, mock …) plug into the ports; the composition root wires everything together.
+`@node-i3x/core` is the pure domain layer of the **node-i3x** monorepo. It defines every domain model, service, and port interface required by the i3X Beta REST API — without importing a single runtime dependency. Adapters (OPC UA, MQTT, mock …) plug into the ports; the composition root wires everything together.
 
 ---
 

@@ -61,7 +61,7 @@ export class OpcUaClient {
     this._opts = {
       endpointUrl: opts.endpointUrl,
       securityMode: opts.securityMode ?? 'None',
-      applicationName: opts.applicationName ?? 'i3x2ua-node',
+      applicationName: opts.applicationName ?? 'node-i3x',
       optimizedClient: opts.optimizedClient ?? 'auto',
       browseStrategy: opts.browseStrategy ?? 'parallel',
     };

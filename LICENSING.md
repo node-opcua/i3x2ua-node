@@ -1,6 +1,6 @@
 # Dual Licensing Guide
 
-> **i3x2ua-node** is dual-licensed under the **AGPL-3.0-or-later** and a
+> **node-i3x** is dual-licensed under the **AGPL-3.0-or-later** and a
 > **Sterfive Commercial License**. This document explains what each
 > license allows and when you need which.
 
@@ -45,7 +45,7 @@ copyleft to **network use**. This is the key difference from the GPL:
 
 ### The Critical Implication
 
-> **If you use i3x2ua-node in a server that users interact with over
+> **If you use node-i3x in a server that users interact with over
 > a network** (REST API, web app, cloud platform, IoT gateway),
 > you **must** make your **entire application's source code**
 > available to those users under the AGPL — even if you never

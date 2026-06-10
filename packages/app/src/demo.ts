@@ -166,7 +166,7 @@ async function main() {
   const logger = consoleLogger;
 
   console.log(`\n${'═'.repeat(60)}`);
-  console.log('  🏭 i3x2ua-node Demo');
+  console.log('  🏭 node-i3x Demo');
   console.log('═'.repeat(60));
 
   // 1. Start OPC UA server

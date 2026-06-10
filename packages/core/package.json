@@ -7,11 +7,11 @@
   "homepage": "https://sterfive.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/node-opcua/i3x2ua-node.git",
+    "url": "git+https://github.com/node-opcua/node-i3x.git",
     "directory": "packages/core"
   },
   "bugs": {
-    "url": "https://github.com/node-opcua/i3x2ua-node/issues",
+    "url": "https://github.com/node-opcua/node-i3x/issues",
     "email": "contact@sterfive.com"
   },
   "funding": {
@@ -22,13 +22,10 @@
     "opcua",
     "opc-ua",
     "i3x",
-    "i3x2ua",
     "industrial",
     "iiot",
     "iot",
     "domain",
-    "hexagonal-architecture",
-    "ports-and-adapters",
     "digital-twin",
     "asset-management",
     "sterfive"
