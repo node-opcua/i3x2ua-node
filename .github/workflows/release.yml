@@ -13,6 +13,8 @@
 #   2. On merge to main, the workflow either:
 #      a) Opens/updates a "Version Packages" PR
 #      b) If that PR is merged, publishes to npm with provenance
+#
+# IMPORTANT: Publish only happens after CI (tests/lint) passes.
 
 name: Release
 
@@ -33,8 +35,14 @@ permissions:
   pull-requests: write  # to create/update the "Version Packages" PR
 
 jobs:
+  # Gate: wait for CI to pass before releasing
+  ci:
+    uses: ./.github/workflows/ci.yml
+    secrets: inherit
+
   release:
     name: Version & Publish
+    needs: ci
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -58,6 +66,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Build all packages
+        run: npm run build
 
       - name: Create Release PR or Publish
         id: changesets
