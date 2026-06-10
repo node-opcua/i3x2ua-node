@@ -1,12 +1,12 @@
-# ─────────────────────────────────────────────────────────────
-# i3x2ua-node — Automated release with Changesets
-# ─────────────────────────────────────────────────────────────
+# -------------------------------------------------------------
+# i3x2ua-node - Automated release with Changesets
+# -------------------------------------------------------------
 #
-# Uses npm Trusted Publishing (OIDC) — no NPM_TOKEN needed.
-# Configure on npmjs.com: package settings → Trusted Publishers
-#   → Provider: GitHub Actions
-#   → Repository: node-opcua/i3x2ua-node
-#   → Workflow: release.yml
+# Uses npm Trusted Publishing (OIDC) - no NPM_TOKEN needed.
+# Configure on npmjs.com: package settings -> Trusted Publishers
+#   -> Provider: GitHub Actions
+#   -> Repository: node-opcua/i3x2ua-node
+#   -> Workflow: release.yml
 #
 # How it works:
 #   1. Developers add changesets: `npm run changeset`
